@@ -22,5 +22,8 @@ function playRound(){ // This will take input from Player and Computer and decid
     }
 }
 
-function game(){  // This will loop the game to a best of 5
+function game(){  // This will loop the game 5 time
+    for (let i =0; i < 5; i++){
+        playRound()
+    }
 }
