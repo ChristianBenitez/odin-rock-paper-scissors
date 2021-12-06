@@ -15,10 +15,14 @@ function playRound(){ // This will take input from Player and Computer and decid
     playerSelection = playerSelection.toLowerCase()             // Makes sure player inpute is case insensitive
     if (playerSelection == computerSelection){
         console.log("Tie Game")
-    } else if (playerSelection == "rock" && computerSelection == "paper" || playerSelection == "paper" && computerSelection == "scissors" || playerSelection == "scissors" && computerSelection == "rock"){
-        console.log("You Lose");
-    } else if (playerSelection == "paper" && computerSelection == "rock" || playerSelection == "scissors" && computerSelection == "paper" || playerSelection == "rock" && computerSelection == "scissors"){
-        console.log("You Win")
+    } else if (playerSelection == "rock" && computerSelection == "paper" 
+        || playerSelection == "paper" && computerSelection == "scissors" 
+        || playerSelection == "scissors" && computerSelection == "rock"){
+            console.log("You Lose");
+    } else if (playerSelection == "paper" && computerSelection == "rock" 
+        || playerSelection == "scissors" && computerSelection == "paper" 
+        || playerSelection == "rock" && computerSelection == "scissors"){
+            console.log("You Win")
     }
 }
 
